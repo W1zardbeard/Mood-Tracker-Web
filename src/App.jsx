@@ -1,22 +1,47 @@
-import { useState } from 'react'
-import styled from 'styled-components'
-import { Typo } from './constants/Typography.js'
-import { Colors } from './constants/Colors.js'
+import { useState, useEffect } from 'react'
 
-import Button from './components/ui/Button.jsx'
+
+import Button from './components/ui/button/Button.jsx'
+import InputField from './components/ui/InputField.jsx'
+import Test from './components/test/Test.jsx'
+
+// const StyledHeading = styled.h1`
+//     color: ${Colors.blue[700]};
+//   `;
+
 
 function App() {
 
-  const StyledHeading = styled.h1`
-    color: ${Colors.blue[700]};
-  `;
+  // const [inputValue, setInputValue] = useState(''); 
+
+  
+  // function handleClick(){
+  //   alert('butthole');
+  // }
+
+  // function handleInputChange(event) {
+  //   console.log("im changeing")
+  //   setInputValue(event.target.value);
+   
+  // }
+
+  // useEffect(() => {
+  //   console.log('Input value changed:', inputValue);
+  // }, [inputValue]);
 
 
   return (
     <>
       <div>
-        <StyledHeading style={Typo.heading.h1}>butthole</StyledHeading>
-        <Button type="primary">Primary Button</Button>
+        <h1>butthole</h1>
+        {/* <Button onPress={handleClick} type="secondary">Primary Button</Button>
+        <InputField
+          type="text"
+          placeholder="Enter your text"
+          value={inputValue}
+          onChange={handleInputChange}
+        /> */}
+        <Test />
       </div>
     </>
   )
